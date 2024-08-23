@@ -53,7 +53,7 @@ header nav ul li a{
 }
 
 header nav ul li:hover{
-    color: #0056b3;
+    color: #0056b3; 
     font-size: 24px; 
 }
 
@@ -76,6 +76,7 @@ header nav ul li:hover{
 }
 .login-container h2 {
     margin-top: 0;
+    margin-bottom: 9px;
     text-align: center;
     color: #21219C;
     font-weight: 900;
@@ -109,13 +110,65 @@ header nav ul li:hover{
 p{
     margin-top: 9px;
     font-size: 14px;
+    text-decoration: none;
 }
 
 b{
     cursor: pointer;
     color: #21219C;
+    text-decoration: none;
 }
 
 b:hover{
     color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+    gap: 5px;
+}
+
+.footer-section img{
+    margin-top: 2%;
+    width: 3%;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #21219C;
+    padding-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
 }
