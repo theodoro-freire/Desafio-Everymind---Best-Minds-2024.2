@@ -39,12 +39,17 @@ header nav ul{
 }
 
 header nav ul li{
+    text-decoration: none;
     color: #21219C;
     font-weight: 900;
     font-size: 23px;  
     cursor: pointer;
     
 
+}
+
+header nav ul li a{
+    text-decoration: none;
 }
 
 header nav ul li:hover{
@@ -169,17 +174,85 @@ button:hover {
 }
 
 .bloco2-sobre{
+    padding-top: 4%;
+    padding-bottom: 4%;
     gap: 10px;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    align-items: center;
+}
+
+.bloco2-sobre section img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.bloco2-sobre section p{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+.bloco2-sobre h4{
+    font-size: 25px;
+    margin-bottom: 3%;
 }
 
 .bloco2-sobre section{
     display: flex;
+    padding-left: 7%;
+    padding-right: 14%;
+    gap: 25px;
 }
 
-.bloco2-sobre section img{
-    width: 50px;
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+    gap: 5px;
+}
+
+.footer-section img{
+    margin-top: 2%;
+    width: 3%;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #21219C;
+    padding-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+
