@@ -13,17 +13,21 @@
             <ul>
                 <li><a>Home</a></li>
                 <li><a>Sobre</a></li>
+                <li><a>Produtos</a></li>
                 <li><a>Login</a></li>
             </ul>
         </nav>
     </header>
 
     <section>
+        
         <div class="carousel">
+            <h1>NUNES SPORTS</h1>
+            <h2>Prepare-se para a <b style="color: rgb(6, 255, 6);">vitória</b></h2>
             <div class="carousel-images">
-                <img src="imagem1.jpg" alt="Imagem 1">
-                <img src="imagem2.jpg" alt="Imagem 2">
-                <img src="imagem3.jpg" alt="Imagem 3">
+                <img src="assets/natacao.jpg" alt="Imagem 1">
+                <img src="assets/futebol.jpg" alt="Imagem 2">
+                <img src="assets/basquete.jpg" alt="Imagem 3">
             </div>
             <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
             <button class="next" onclick="moveCarousel(1)">&#10095;</button>
@@ -31,6 +35,39 @@
     
         <script src="script.js"></script>
     </section>
+    <section class="section-sobre">
+        <div class="sobre-img-right">
+        <div class="bloco1-sobre">
+            <h3>SOBRE A NUNES SPORTS</h3>
+            <p>Bem-vindo à Nunes Sportes, a sua loja online dedicada a oferecer os melhores produtos esportivos para atletas e entusiastas de todas as modalidades! 
+                Com o compromisso de proporcionar a melhor experiência de compra, nossa loja oferece uma vasta gama de produtos de alta qualidade, 
+                desde equipamentos essenciais até acessórios inovadores.</p>
+            <p>Nossa missão é ajudar você a alcançar seus objetivos esportivos, oferecendo produtos que atendem às suas necessidades e superam suas expectativas. 
+                Navegue pela nossa loja, encontre o que você precisa e leve sua paixão pelo esporte a um novo nível com a Nunes Sportes!</p>
+            </div>
+            <img src="assets/atleta.jpg">    
+        </div>
+        
+
+    </section>
+
+    <div class="bloco2-sobre">
+        <h4>
+            Na Nunes Sportes, você encontrará:
+        </h4>
+        <section>
+            <img src="assets/equipamentos.png">
+            <p><b>Equipamentos esportivos de ponta:</b> Escolha entre uma ampla variedade de equipamentos para 
+                diferentes esportes, todos selecionados com cuidado para garantir desempenho e durabilidade.</p>
+            <img src="assets/roupas.png">
+            <p><b>Roupas e acessórios:</b> Descubra roupas esportivas que combinam estilo e funcionalidade, 
+                além de acessórios que complementam e melhoram a sua performance.</p>
+            <img src="assets/ofertas.png">
+            <p><b>Ofertas e promoções especiais:</b> Aproveite nossos descontos e ofertas exclusivas para obter o 
+                melhor valor em seus produtos esportivos favoritos.</p>   
+        </section>
+    </div>
+
 
 </body>
 </html>
@@ -53,6 +90,6 @@ function moveCarousel(direction) {
 }
 
 
-setInterval(() => moveCarousel(1), 3000);
+setInterval(() => moveCarousel(1), 4500);
 
 </script>
