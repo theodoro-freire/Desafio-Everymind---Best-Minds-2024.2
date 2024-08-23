@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 450px;
+    border-bottom: 2px solid #21219C;
+}
+
+header img{
+    width: 210px;
+    
+}
+
+header img:hover{
+    width: 230px;
+    
+}
+
+header nav{
+    display: flex;
+    
+}
+
+header nav ul{
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
+
+header nav ul li{
+    color: #21219C;
+    font-weight: 550;
+    font-size: larger;    
+}
+
+header nav ul li:hover{
+    color: #3131E8;
+    font-size: 21px; 
+}
+
+
+
+.carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-images img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

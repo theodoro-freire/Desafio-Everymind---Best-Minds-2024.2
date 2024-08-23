@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <a><img src="assets/logo nunes sports.png" alt="logo"></a>
+        <nav>
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>Sobre</a></li>
+                <li><a>Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="imagem1.jpg" alt="Imagem 1">
+                <img src="imagem2.jpg" alt="Imagem 2">
+                <img src="imagem3.jpg" alt="Imagem 3">
+            </div>
+            <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+            <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+        </div>
+    
+        <script src="script.js"></script>
+    </section>
+
+</body>
+</html>
+<script>
+    let currentIndex = 0;
+
+function moveCarousel(direction) {
+    const carouselImages = document.querySelector('.carousel-images');
+    const totalImages = carouselImages.children.length;
+    currentIndex += direction;
+
+    if (currentIndex < 0) {
+        currentIndex = totalImages - 1;
+    } else if (currentIndex >= totalImages) {
+        currentIndex = 0;
+    }
+
+    const offset = -currentIndex * 100;
+    carouselImages.style.transform = `translateX(${offset}%)`;
+}
+
+
+setInterval(() => moveCarousel(1), 3000);
+
+</script>
