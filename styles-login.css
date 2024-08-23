@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 450px;
+    border-bottom: 2px solid #21219C;
+}
+
+header img{
+    width: 210px;
+    cursor: pointer;
+    
+}
+
+header img:hover{
+    width: 230px;
+    
+}
+
+header nav{
+    display: flex;
+    
+    
+}
+
+header nav ul{
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+}
+
+header nav ul li{
+    text-decoration: none;
+    color: #21219C;
+    font-weight: 900;
+    font-size: 23px;  
+    cursor: pointer;
+    
+
+}
+
+header nav ul li a{
+    text-decoration: none;
+}
+
+header nav ul li:hover{
+    color: #0056b3;
+    font-size: 24px; 
+}
+
+
+.login-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+        
+}
+
+.login-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    
+}
+.login-container h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #21219C;
+    font-weight: 900;
+    font-size: 23px;  
+    cursor: pointer;
+    
+}
+.login-container input {
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #21219C;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 9px;
+}
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+p{
+    margin-top: 9px;
+    font-size: 14px;
+}
+
+b{
+    cursor: pointer;
+    color: #21219C;
+}
+
+b:hover{
+    color: #0056b3;
+}
