@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles-login.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='assets/icon.ico') }}">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='assets/logo nunes sports.png') }}" alt="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">Sobre</a></li>
+                <li><a href="{{ url_for('products') }}">Produtos</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="login-box"> 
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="{{ url_for('login') }}" method="post">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Entrar</button>
+                <p>Ainda não possui uma conta? <b><a href="{{ url_for('register') }}">Cadastre-se</a></b></p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre Nós</h3>
+                <p>Loja de referência para produtos esportivos de qualidade.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Endereço: Rua Legal, 123, São Paulo</p>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Email: contato@nunesesportes.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Siga-nos</h3>
+                <a href="https://facebook.com"><img src="{{ url_for('static', filename='assets/facebook.png') }}" alt="Facebook"></a>
+                <a href="https://twitter.com"><img src="{{ url_for('static', filename='assets/twitter.png') }}" alt="Twitter"></a>
+                <a href="https://instagram.com"><img src="{{ url_for('static', filename='assets/instagram.png') }}" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Nunes Sportes. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
