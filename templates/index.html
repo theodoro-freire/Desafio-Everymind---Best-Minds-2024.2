@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <link rel="icon" href="{{ url_for('static', filename='assets/icon.ico') }}">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="icon" href="/static/assets/icon.ico">
     <title>Home</title>
 </head>
 <body>
     <header>
-        <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='assets/logo nunes sports.png') }}" alt="logo"></a>
+        <a href="/"><img src="/static/assets/logo nunes sports.png" alt="logo"></a>
         <nav>
             <ul>
-                <li><a href="{{ url_for('index') }}">Home</a></li>
-                <li><a href="{{ url_for('about') }}">Sobre</a></li>
-                <li><a href="{{ url_for('products') }}">Produtos</a></li>
-                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="/login">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -25,13 +25,14 @@
             <h1>NUNES SPORTS</h1>
             <h2>Prepare-se para a <b style="color: rgb(6, 255, 6);">vitória</b></h2>
             <div class="carousel-images">
-                <img src="{{ url_for('static', filename='assets/natacao.jpg') }}" alt="Imagem 1">
-                <img src="{{ url_for('static', filename='assets/futebol.jpg') }}" alt="Imagem 2">
-                <img src="{{ url_for('static', filename='assets/basquete.jpg') }}" alt="Imagem 3">
+                <img src="/static/assets/natacao.jpg" alt="Imagem 1">
+                <img src="/static/assets/futebol.jpg" alt="Imagem 2">
+                <img src="/static/assets/basquete.jpg" alt="Imagem 3">
             </div>
             <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
             <button class="next" onclick="moveCarousel(1)">&#10095;</button>
         </div>
+        <script src="/static/script.js"></script>
     </section>
 
     <section class="section-sobre" id="sobre">
@@ -39,32 +40,30 @@
             <div class="bloco1-sobre">
                 <h3>SOBRE A NUNES SPORTS</h3>
                 <p>Bem-vindo à Nunes Sportes, a sua loja online dedicada a oferecer os melhores produtos esportivos para atletas e entusiastas de todas as modalidades! 
-                    Com o compromisso de proporcionar a melhor experiência de compra, nossa loja oferece uma vasta gama de produtos de alta qualidade, 
-                    desde equipamentos essenciais até acessórios inovadores.</p>
+                Com o compromisso de proporcionar a melhor experiência de compra, nossa loja oferece uma vasta gama de produtos de alta qualidade, 
+                desde equipamentos essenciais até acessórios inovadores.</p>
                 <p>Nossa missão é ajudar você a alcançar seus objetivos esportivos, oferecendo produtos que atendem às suas necessidades e superam suas expectativas. 
-                    Navegue pela nossa loja, encontre o que você precisa e leve sua paixão pelo esporte a um novo nível com a Nunes Sportes!</p>
+                Navegue pela nossa loja, encontre o que você precisa e leve sua paixão pelo esporte a um novo nível com a Nunes Sportes!</p>
             </div>
-            <img src="{{ url_for('static', filename='assets/atleta.jpg') }}">    
+            <img src="/static/assets/atleta.jpg">    
         </div>
+
     </section>
 
     <div class="bloco2-sobre">
         <h4>Na Nunes Sportes, você encontrará:</h4>
         <section>
             <div>
-                <img src="{{ url_for('static', filename='assets/equipamentos.png') }}">
-                <p><b>Equipamentos esportivos de ponta:</b> <br>Escolha entre uma ampla variedade de equipamentos para 
-                    diferentes esportes, todos selecionados com cuidado para garantir desempenho e durabilidade.</p>
+                <img src="/static/assets/equipamentos.png">
+                <p><b>Equipamentos esportivos de ponta:</b> <br>Escolha entre uma ampla variedade de equipamentos para diferentes esportes, todos selecionados com cuidado para garantir desempenho e durabilidade.</p>
             </div>
             <div>
-                <img src="{{ url_for('static', filename='assets/roupas.png') }}">
-                <p><b>Roupas e acessórios:</b><br> Descubra roupas esportivas que combinam estilo e funcionalidade, 
-                    além de acessórios que complementam e melhoram a sua performance.</p>
+                <img src="/static/assets/roupas.png">
+                <p><b>Roupas e acessórios:</b><br> Descubra roupas esportivas que combinam estilo e funcionalidade, além de acessórios que complementam e melhoram a sua performance.</p>
             </div>
             <div>
-                <img src="{{ url_for('static', filename='assets/ofertas.png') }}">
-                <p><b>Ofertas e promoções especiais:</b><br> Aproveite nossos descontos e ofertas exclusivas para obter o 
-                    melhor valor em seus produtos esportivos favoritos.</p>  
+                <img src="/static/assets/ofertas.png">
+                <p><b>Ofertas e promoções especiais:</b><br> Aproveite nossos descontos e ofertas exclusivas para obter o melhor valor em seus produtos esportivos favoritos.</p>  
             </div> 
         </section>
     </div>
@@ -83,9 +82,9 @@
             </div>
             <div class="footer-section">
                 <h3>Siga-nos</h3>
-                <a href="https://facebook.com"><img src="{{ url_for('static', filename='assets/facebook.png') }}" alt="Facebook"></a>
-                <a href="https://twitter.com"><img src="{{ url_for('static', filename='assets/twitter.png') }}" alt="Twitter"></a>
-                <a href="https://instagram.com"><img src="{{ url_for('static', filename='assets/instagram.png') }}" alt="Instagram"></a>
+                <a href="https://facebook.com"><img src="/static/assets/facebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com"><img src="/static/assets/twitter.png" alt="Twitter"></a>
+                <a href="https://instagram.com"><img src="/static/assets/instagram.png" alt="Instagram"></a>
             </div>
         </div>
         <div class="footer-bottom">
