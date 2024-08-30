@@ -14,8 +14,8 @@ Para rodar o projeto em sua máquina local, siga os passos abaixo:
 
 1. **Clone o repositório:**
     ```bash
-    git clone https://github.com/SEU_USUARIO/NUNES-SPORTS.git
-    cd NUNES-SPORTS
+    git clone https://github.com/theodoro-freire/Desafio-Everymind---Best-Minds-2024.2.git
+    cd Desafio-Everymind---Best-Minds-2024.2
     ```
 
 2. **Instale as dependências necessárias:**
