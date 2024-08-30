@@ -30,7 +30,7 @@ def register():
         email = request.form['email']
         username = request.form['username']
         password = request.form['password']
-        confirm_password = request.form['confirm-password']
+        confirm_password = request.form['confirm_password']
 
         if password != confirm_password:
             error = 'As senhas não coincidem!'
