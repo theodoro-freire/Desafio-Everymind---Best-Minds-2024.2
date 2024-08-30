@@ -256,13 +256,13 @@ footer {
 }
 
 header nav ul li.user {
-    margin-left: auto; 
+    margin-left: 20px; 
     font-size: 18px;
     color: #000000;
     font-weight: 600;
     display: flex;
     align-items: center; 
-    
+    padding-right: 10px; 
 }
 
 header nav ul li.user a {
@@ -271,17 +271,18 @@ header nav ul li.user a {
 }
 
 header nav ul li.user a:hover {
-    padding-left: 15px;
+    padding-left: 5px; 
 }
 
 header nav ul li.logout {
     background-color: #d32d0b;
-    padding: 5px 10px;
+    padding: 5px 15px; 
     border-radius: 5px;
     color: white;
     font-size: 18px;
     display: flex;
     align-items: center; 
+    margin-left: 10px; 
 }
 
 header nav ul li.logout a {
@@ -292,6 +293,7 @@ header nav ul li.logout a {
 header nav ul li.logout a:hover {
     color: #000000;
 }
+
 
 .products-container {
     padding: 20px;
