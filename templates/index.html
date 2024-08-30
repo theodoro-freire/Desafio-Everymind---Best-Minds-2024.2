@@ -15,7 +15,12 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#">Produtos</a></li>
-                <li><a href="/login">Login</a></li>
+                {% if session.get('logged_in') %}
+                    <li class="user"><a href="#">Olá, {{ session.get('username') }}</a></li>
+                    <li class="logout"><a href="/logout">Sair</a></li>
+                {% else %}
+                    <li><a href="/login">Login</a></li>
+                {% endif %}
             </ul>
         </nav>
     </header>

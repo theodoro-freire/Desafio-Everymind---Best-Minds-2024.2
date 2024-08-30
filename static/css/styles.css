@@ -255,7 +255,43 @@ footer {
     margin-top: 20px;
 }
 
+header nav ul li.user {
+    margin-left: auto; 
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+    display: flex;
+    align-items: center; 
+    
+}
 
+header nav ul li.user a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header nav ul li.user a:hover {
+    padding-left: 15px;
+}
+
+header nav ul li.logout {
+    background-color: #d32d0b;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center; 
+}
+
+header nav ul li.logout a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li.logout a:hover {
+    color: #000000;
+}
 
 
 
