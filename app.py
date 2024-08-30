@@ -180,5 +180,5 @@ def deletar_produto(id):
     return redirect(url_for('produtos'))
 
 if __name__ == '__main__':
-    init_db()  # Cria a tabela products se ainda não existir
+    init_db()  
     app.run(debug=True)
