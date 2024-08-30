@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="icon" href="/static/assets/icon.ico">
+    <title>Editar Produto</title>
+</head>
+<body>
+    <header>
+        <a href="/"><img src="/static/assets/logo nunes sports.png" alt="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/produtos">Produtos</a></li>
+                {% if session.get('logged_in') %}
+                    <li class="user">Olá, {{ session['username'] }}</li>
+                    <li class="logout"><a href="/logout">Sair</a></li>
+                {% else %}
+                    <li><a href="/login">Login</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form method="post" class="form-editar">
+            <input type="hidden" name="id" value="{{ product['id'] }}">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" value="{{ product['nome'] }}" required>
+            <label for="codigo">Código:</label>
+            <input type="text" id="codigo" name="codigo" value="{{ product['codigo'] }}" required>
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" name="descricao">{{ product['descricao'] }}</textarea>
+            <label for="preco">Preço:</label>
+            <input type="number" id="preco" name="preco" value="{{ product['preco'] }}" step="0.01" required>
+            <button type="submit">Salvar</button>
+        </form>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre Nós</h3>
+                <p>Loja de referência para produtos esportivos de qualidade.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Endereço: Rua Legal, 123, São Paulo</p>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Email: contato@nunesesportes.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Siga-nos</h3>
+                <a href="https://facebook.com"><img src="/static/assets/facebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com"><img src="/static/assets/twitter.png" alt="Twitter"></a>
+                <a href="https://instagram.com"><img src="/static/assets/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Nunes Sportes. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
