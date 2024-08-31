@@ -68,6 +68,7 @@ h1{
     font-size: 100px;
     font-weight: bold;
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
   }
 
 h2{
@@ -83,6 +84,7 @@ h2{
     background-color: #21219C;
     padding: 6px;
     border-radius: 20px;
+    white-space: nowrap;
 }
 
 .carousel {
